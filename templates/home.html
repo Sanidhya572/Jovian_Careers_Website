@@ -23,12 +23,15 @@
 
         h1, h2 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 40px; /* Increased margin for better spacing */
+            font-weight: bold; /* Added font-weight for emphasis */
+            font-family: Roboto;
+            color: #1d1f20; /* Change heading color */
         }
 
         p {
             line-height: 1.6;
-            margin-bottom: 20px;
+            margin-bottom: 40px; /* Increased margin for better spacing */
             text-align: justify;
         }
 
@@ -110,18 +113,26 @@
             font-style: italic;
             color: #6c757d;
         }
+
+        /* Additional styles for section titles */
+        .section-title {
+            font-size: 24px; /* Increased font size */
+            color: #007bff; /* Changed color to match button */
+            text-transform: uppercase; /* Uppercase text */
+            margin-bottom: 40px; /* Increased margin for better spacing */
+        }
     </style>
 </head>
 <body>
     {% include 'nav.html' %}
     <div class="container">
-        <h1>Jovian Careers</h1>
+        <h1 class="section-title">Jovian Careers</h1>
         <img class="img-fluid" id="banner" src="{{ url_for('static', filename='banner.jpg') }}" alt="Banner">
 
-        <div style="margin-top: 30px;"></div>
+        <div style="margin-top: 60px;"></div> <!-- Increased spacing between sections -->
 
-        <h2>About Jovian</h2>
-        <div class="row" style="margin-bottom: 16px;">
+        <h2 class="section-title">About Jovian</h2>
+        <div class="row" style="margin-bottom: 40px;">
             <div class="col-md-6">
                 <p>Welcome to Jovian Careers, your go-to platform for career guidance, job opportunities, and professional development resources.
                     At Jovian Careers, we understand that navigating the job market can be overwhelming. That's why we're dedicated
@@ -142,7 +153,7 @@
             </div>
         </div>
 
-        <h2>Open Positions</h2>
+        <h2 class="section-title">Open Positions</h2>
         <div>
             {% for job in jobs %}
                 {% include 'jobitem.html' %}
