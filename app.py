@@ -38,6 +38,21 @@ JOBS = [
         'Location': "Bengaluru, India",
         'Salary': 'Rs. 13,00,000'
     },
+
+    {
+        'id':6,
+        'title': "UI/UX Designer",
+        'Location': "Remote",
+        'Salary': 'Rs. 7,00,000'
+    },
+
+
+     {
+        'id':7,
+        'title': "Enterprise Architect",
+        'Location': "Bengaluru, India",
+        'Salary': 'Rs. 25,00,000'
+    }
 ]
 
 @app.route('/')
