@@ -78,6 +78,7 @@
 </head>
 
 <body>
+    {% include 'nav.html' %}
     <div class="container">
         <h1>Jovian Careers</h1>
         <img class="img-fluid" id="banner" src="{{ url_for('static', filename='banner.jpg') }}" alt="Banner">
@@ -86,47 +87,63 @@
         <div style="margin-top: 30px;"></div>
 
         <h2>About Jovian</h2>
-        <p>Welcome to Jovian Careers, your go-to platform for career guidance, job opportunities, and professional
-            development resources.
+        <div class="row" style="margin-bottom: 16px;">
+            <div class="col-md-6">
+                <p>Welcome to Jovian Careers, your go-to platform for career guidance, job opportunities, and
+                    professional
+                    development resources.
 
-            At Jovian Careers, we understand that navigating the job market can be overwhelming. That's why we're
-            dedicated
-            to providing you with the tools and support you need to succeed in your career journey.
+                    At Jovian Careers, we understand that navigating the job market can be overwhelming. That's why
+                    we're
+                    dedicated
+                    to providing you with the tools and support you need to succeed in your career journey.
 
-            Our mission is to empower individuals like you to achieve your career goals by offering comprehensive
-            resources,
-            expert advice, and personalized guidance every step of the way. Whether you're a recent graduate exploring
-            career options or a seasoned professional seeking new opportunities, Jovian Careers is here to help you
-            thrive.
+                    Our mission is to empower individuals like you to achieve your career goals by offering
+                    comprehensive
+                    resources,
+                    expert advice, and personalized guidance every step of the way. Whether you're a recent graduate
+                    exploring
+                    career options or a seasoned professional seeking new opportunities, Jovian Careers is here to help
+                    you
+                    thrive.
 
-            Discover insightful articles, practical tips, and inspiring success stories from industry experts and fellow
-            professionals. Explore job listings across various industries and locations, tailored to match your skills
-            and
-            aspirations. Engage with our vibrant community to network, share experiences, and learn from each other's
-            journeys.
+                    Discover insightful articles, practical tips, and inspiring success stories from industry experts
+                    and fellow
+                    professionals. Explore job listings across various industries and locations, tailored to match your
+                    skills
+                    and
+                    aspirations. Engage with our vibrant community to network, share experiences, and learn from each
+                    other's
+                    journeys.
 
-            At Jovian Careers, we believe that every career path is unique, and we're committed to supporting you in
-            reaching your full potential. Join us on your path to success and let's embark on this exciting journey
-            together.
-        </p>
+                    At Jovian Careers, we believe that every career path is unique, and we're committed to supporting
+                    you in
+                    reaching your full potential. Join us on your path to success and let's embark on this exciting
+                    journey
+                    together.
+                </p>
+            </div>
+            <div class="d-none d-md-block col-md-6">
+                <img src="/static/people.jpg" style="height: 320px; border-radius: 4px;">
+            </div>
 
-        <h2>Open Positions</h2>
-        <div>
-            {% for job in jobs %}
-            {% include 'jobitem.html' %}
+            <h2>Open Positions</h2>
+            <div>
+                {% for job in jobs %}
+                {% include 'jobitem.html' %}
 
-            {% endfor %}
+                {% endfor %}
+            </div>
+            <div class="text-center">
+                <a href=" mailto:hello@jovian.ai?subject=Question%20about%20job%20opening&body=My%20Question%3A%20%3Cyour%20question%20here%3E%0D%0A%0D%0A " class="btn btn-primary btn-lg">Contact Us</a>
+            </div>
         </div>
-        <div class="text-center">
-            <button class="btn btn-primary btn-lg">Contact Us</button>
-        </div>
-    </div>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024, Jovian Careers. Designed by <a href="#">Your Name</a></p>
-        </div>
-    </footer>
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024, Jovian Careers. Designed by <a href="#">Sanidhya Rajguru</a></p>
+            </div>
+        </footer>
 </body>
 
 </html>
