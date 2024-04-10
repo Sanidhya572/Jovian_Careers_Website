@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Developer Job Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Front End Developer Job Details</h1>
+        <p><strong>Location:</strong> Mumbai, India</p>
+        <p><strong>Salary:</strong> Rs. 11,00,000</p>
+        <div class="description">
+            <h2>Job Description</h2>
+            <p>Join our team as a Front End Developer and play a key role in creating engaging user experiences. As a Front End Developer, you will be responsible for implementing user interfaces and web designs using HTML, CSS, and JavaScript. You will collaborate with designers and backend developers to bring creative concepts to life and ensure seamless integration of frontend components. The ideal candidate should have a strong understanding of frontend development principles, along with experience in responsive design and modern web development frameworks such as React or Angular.</p>
+            <p>If you are passionate about building intuitive and visually appealing interfaces, we want to hear from you!</p>
+            <div class="col-2 padding-right:16px">
+                <a href=" mailto:hello@jovian.ai?subject=Application%20for%20{{job['title']}}&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20Resume%20Link%3A%20%3Cresume%20link%3E%0D%0AMy%20LinkedIn%20link%3A%20%3Clinkedin%20in%3E%0D%0A "
+                    type="button" class="btn btn-outline-primary float-right align-middle">Apply</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

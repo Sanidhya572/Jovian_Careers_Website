@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Scientist Job Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Scientist Job Details</h1>
+        <p><strong>Location:</strong> Pune, India</p>
+        <p><strong>Salary:</strong> Rs. 12,00,000</p>
+        <div class="description">
+            <h2>Job Description</h2>
+            <p>Join our team as a Data Scientist and be at the forefront of innovation. As a Data Scientist, you will work on cutting-edge projects using advanced machine learning and statistical techniques to derive actionable insights from complex data sets. You will collaborate with cross-functional teams to develop and deploy predictive models, optimize algorithms, and drive business growth through data-driven decision-making. The ideal candidate should have a strong background in statistics, machine learning, and programming, with experience in tools such as Python, R, and TensorFlow.</p>
+            <p>If you are passionate about solving challenging problems and leveraging data science to make a real impact, we want to hear from you!</p>
+            <div class="col-2 padding-right:16px">
+                <a href=" mailto:hello@jovian.ai?subject=Application%20for%20{{job['title']}}&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20Resume%20Link%3A%20%3Cresume%20link%3E%0D%0AMy%20LinkedIn%20link%3A%20%3Clinkedin%20in%3E%0D%0A "
+                    type="button" class="btn btn-outline-primary float-right align-middle">Apply</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

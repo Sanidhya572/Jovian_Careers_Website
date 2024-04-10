@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Analyst Job Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Power BI Analyst Job Details</h1>
+        <p><strong>Location:</strong> Indore, India</p>
+        <p><strong>Salary:</strong> Rs. 5,00,000</p>
+        <div class="description">
+            <h2>Job Description</h2>
+            <p>We are hiring a Power BI Analyst to join our dynamic team. As a Power BI Analyst, you will be responsible for designing, developing, and maintaining interactive dashboards and reports using Power BI. You will collaborate with stakeholders to gather requirements, analyze data, and provide actionable insights to support business decision-making. The ideal candidate should have a strong understanding of data visualization best practices, along with proficiency in SQL and experience in data modeling and ETL processes.</p>
+            <p>If you have a passion for data visualization and enjoy transforming complex data into meaningful insights, we'd love to hear from you!</p>
+            <div class="col-2 padding-right:16px">
+                <a href=" mailto:hello@jovian.ai?subject=Application%20for%20{{job['title']}}&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20Resume%20Link%3A%20%3Cresume%20link%3E%0D%0AMy%20LinkedIn%20link%3A%20%3Clinkedin%20in%3E%0D%0A "
+                    type="button" class="btn btn-outline-primary float-right align-middle">Apply</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

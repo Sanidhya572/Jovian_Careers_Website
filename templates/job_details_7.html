@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise Architect Job Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Enterprise Architect Job Details</h1>
+        <p><strong>Location:</strong> Bengaluru, India</p>
+        <p><strong>Salary:</strong> Rs. 25,00,000</p>
+        <div class="description">
+            <h2>Job Description</h2>
+            <p>We are seeking a skilled Enterprise Architect to lead our architectural initiatives. As an Enterprise Architect, you will be responsible for designing and implementing enterprise-level solutions that align with business objectives and technology standards. You will collaborate with stakeholders to develop architectural roadmaps, evaluate technology options, and ensure solutions meet scalability, security, and performance requirements. The ideal candidate should have extensive experience in enterprise architecture, along with strong leadership and communication skills.</p>
+            <p>If you are a strategic thinker with a deep understanding of IT architecture principles and a track record of successfully delivering complex projects, we encourage you to apply!</p>
+            <div class="col-2 padding-right:16px">
+                <a href=" mailto:hello@jovian.ai?subject=Application%20for%20{{job['title']}}&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20Resume%20Link%3A%20%3Cresume%20link%3E%0D%0AMy%20LinkedIn%20link%3A%20%3Clinkedin%20in%3E%0D%0A "
+                    type="button" class="btn btn-outline-primary float-right align-middle">Apply</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

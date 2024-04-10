@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Developer Job Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Backend Developer Job Details</h1>
+        <p><strong>Location:</strong> Bengaluru, India</p>
+        <p><strong>Salary:</strong> Rs. 13,00,000</p>
+        <div class="description">
+            <h2>Job Description</h2>
+            <p>We are seeking a talented Backend Developer to join our team. As a Backend Developer, you will be responsible for designing, developing, and maintaining server-side applications and databases. You will collaborate with frontend developers, architects, and other stakeholders to develop scalable and efficient backend solutions that meet business requirements. The ideal candidate should have strong programming skills, experience with backend technologies such as Node.js or Java, and knowledge of database management systems like MySQL or MongoDB.</p>
+            <p>If you are passionate about building robust and scalable backend systems, we'd love to hear from you!</p>
+            <div class="col-2 padding-right:16px">
+                <a href=" mailto:hello@jovian.ai?subject=Application%20for%20{{job['title']}}&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20Resume%20Link%3A%20%3Cresume%20link%3E%0D%0AMy%20LinkedIn%20link%3A%20%3Clinkedin%20in%3E%0D%0A "
+                    type="button" class="btn btn-outline-primary float-right align-middle">Apply</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
